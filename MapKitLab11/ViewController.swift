@@ -7,14 +7,29 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var mapa: MKMapView!
+    @IBOutlet weak var selector: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       mapa.showsUserLocation = true
     }
 
-
+    @IBAction func CambiarVistaMapa(_ sender: Any) {
+        switch selector.selectedSegmentIndex {
+        case 0:
+            mapa.mapType = .standard
+        case 1:
+            mapa.mapType = .satellite
+        case 2:
+            mapa.mapType = .hybrid
+        default:
+            break
+        }
+    }
+    
 }
 
