@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,19 +15,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapKitLab11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2JW-Lf-LyR">
-                                <rect key="frame" x="-3" y="32" width="381" height="553"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2JW-Lf-LyR">
+                                <rect key="frame" x="1" y="45" width="414" height="594"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="594" id="PDa-h6-SSi"/>
                                     <constraint firstAttribute="width" constant="381" id="WVg-Qk-Ooy"/>
                                 </constraints>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ITH-Rv-JlZ">
-                                <rect key="frame" x="46" y="604" width="282" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ITH-Rv-JlZ">
+                                <rect key="frame" x="50" y="809" width="314" height="24"/>
                                 <segments>
                                     <segment title="Standard"/>
                                     <segment title="Satellite"/>
@@ -39,6 +38,38 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="56r-a0-fy5"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="1" id="7N8-dm-hBW"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="86J-i5-z8q"/>
+                            <constraint firstItem="ITH-Rv-JlZ" firstAttribute="top" secondItem="2JW-Lf-LyR" secondAttribute="bottom" constant="50" id="8Q4-cd-UR0"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8ir-MQ-Lfw"/>
+                            <constraint firstAttribute="trailing" secondItem="2JW-Lf-LyR" secondAttribute="trailing" id="Bu8-FR-WuG"/>
+                            <constraint firstItem="ITH-Rv-JlZ" firstAttribute="top" secondItem="2JW-Lf-LyR" secondAttribute="bottom" constant="50" id="CKd-uu-xDl"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F5u-OS-YYE"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J5j-At-1zR"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JpZ-dv-Mrl"/>
+                            <constraint firstItem="ITH-Rv-JlZ" firstAttribute="top" secondItem="2JW-Lf-LyR" secondAttribute="bottom" constant="170" id="QGJ-xC-WWm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2JW-Lf-LyR" secondAttribute="trailing" id="TEy-at-r2z"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aEV-Uj-mH4"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aZj-KY-98r"/>
+                            <constraint firstAttribute="trailing" secondItem="2JW-Lf-LyR" secondAttribute="trailing" id="eBv-Xi-IY5"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="epN-8H-VAq"/>
+                            <constraint firstItem="ITH-Rv-JlZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hCc-KT-lRd"/>
+                            <constraint firstItem="ITH-Rv-JlZ" firstAttribute="top" secondItem="2JW-Lf-LyR" secondAttribute="bottom" constant="170" id="iUY-Yi-JQK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ITH-Rv-JlZ" secondAttribute="bottom" constant="30" id="ibp-Bq-1RI"/>
+                            <constraint firstItem="ITH-Rv-JlZ" firstAttribute="top" secondItem="2JW-Lf-LyR" secondAttribute="bottom" constant="30" id="kR3-8U-WbB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ITH-Rv-JlZ" secondAttribute="trailing" constant="50" id="lJd-Zk-EXF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2JW-Lf-LyR" secondAttribute="trailing" id="nLd-ef-TVc"/>
+                            <constraint firstItem="ITH-Rv-JlZ" firstAttribute="top" secondItem="2JW-Lf-LyR" secondAttribute="bottom" constant="170" id="nrj-vB-3UZ"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pvT-0t-AtE"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qcC-qm-4OQ"/>
+                            <constraint firstItem="ITH-Rv-JlZ" firstAttribute="top" secondItem="2JW-Lf-LyR" secondAttribute="bottom" constant="20" id="ssm-Cc-nOM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2JW-Lf-LyR" secondAttribute="trailing" constant="1" id="tF7-Md-Cje"/>
+                            <constraint firstItem="ITH-Rv-JlZ" firstAttribute="top" secondItem="2JW-Lf-LyR" secondAttribute="bottom" constant="20" id="yCU-Jf-bOh"/>
+                            <constraint firstItem="ITH-Rv-JlZ" firstAttribute="top" secondItem="2JW-Lf-LyR" secondAttribute="bottom" constant="170" id="zkm-0B-zuU"/>
+                            <constraint firstItem="2JW-Lf-LyR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zvu-fv-O6J"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -48,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
         </scene>
     </scenes>
 </document>
